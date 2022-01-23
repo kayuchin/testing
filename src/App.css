@@ -1,6 +1,26 @@
 .App {
   text-align: center;
+  margin: 2.5rem;
 }
+
+.btnSpace {
+  padding: 0.2rem;
+}
+
+.dot {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  height: 10px;
+  width: 10px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+
+
+
 
 .App-logo {
   height: 40vmin;
