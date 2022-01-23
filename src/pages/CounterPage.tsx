@@ -8,13 +8,14 @@ import Row from "react-bootstrap/Row";
 
 // custom component
 import Counter from "../components/Counter";
+import { BACKEND_URL } from './constant';
 
 const CounterPage = () => {
 
     const [ socket, setSocket ] = useState<Socket>();
 
     useEffect(() => {
-        const newSocket = io(`http://${window.location.hostname}:5000?user=counter`);
+        const newSocket = io(`${BACKEND_URL}?user=counter`);
         setSocket(newSocket);
     }, []);
 
